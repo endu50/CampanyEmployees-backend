@@ -1,0 +1,74 @@
+2025-11-29 07:39:45.9137 ERROR Something went wrong in the GetCompanies action Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CompanyEmployees.Contract.CompanyRepository.GetAllCompanies(Boolean trackChanges) in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Contract\CompanyRepository.cs:line 11
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Controllers\CompaniesController.cs:line 26
+ClientConnectionId:63f86be7-4426-4266-baaa-cbd1f73193b8
+Error Number:-2,State:0,Class:11 
+2025-11-29 08:06:16.6122 INFO Here is the log on Endris 
+2025-11-29 08:06:16.6664 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:06:16
+2025-11-29 08:06:17.1255 INFO Here is the log on Endris 
+2025-11-29 08:06:17.1255 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:06:17
+2025-11-29 08:15:25.3837 INFO Here is the log on Endris 
+2025-11-29 08:15:25.4032 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:15:25
+2025-11-29 08:15:26.8909 INFO Here is the log on Endris 
+2025-11-29 08:15:26.8909 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:15:26
+2025-11-29 08:17:02.0082 INFO Here is the log on Endris 
+2025-11-29 08:17:02.0082 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:17:02
+2025-11-29 08:17:02.8254 INFO Here is the log on Endris 
+2025-11-29 08:17:02.8254 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:17:02
+2025-11-29 08:20:57.5485 INFO Here is the log on Endris 
+2025-11-29 08:20:57.5485 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:20:57
+2025-11-29 08:23:28.0776 INFO Here is the log on Endris 
+2025-11-29 08:23:28.1449 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:23:28
+2025-11-29 08:27:51.6196 INFO Here is the log on Endris 
+2025-11-29 08:27:51.6196 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:27:51
+2025-11-29 08:29:59.4395 INFO Here is the log on Endris 
+2025-11-29 08:29:59.4395 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:29:59
+2025-11-29 08:36:13.9350 INFO Here is the log on Endris 
+2025-11-29 08:36:13.9481 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 08:36:13
+2025-11-29 10:11:13.4656 INFO Here is the log on Endris 
+2025-11-29 10:11:13.6411 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 10:11:13
+2025-11-29 14:44:38.5101 INFO Here is the log on Endris 
+2025-11-29 14:44:38.5101 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:44:38
+2025-11-29 14:45:50.9177 INFO Here is the log on Endris 
+2025-11-29 14:45:50.9177 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:45:50
+2025-11-29 14:47:20.2909 INFO Here is the log on Endris 
+2025-11-29 14:47:20.2909 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:47:20
+2025-11-29 14:47:59.7926 INFO Here is the log on Endris 
+2025-11-29 14:47:59.7926 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:47:59
+2025-11-29 14:48:10.0556 INFO Here is the log on Endris 
+2025-11-29 14:48:10.0556 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:48:10
+2025-11-29 14:48:49.3177 INFO Here is the log on Endris 
+2025-11-29 14:48:49.3177 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:48:49
+2025-11-29 14:49:12.5613 INFO Here is the log on Endris 
+2025-11-29 14:49:12.5663 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:49:12
+2025-11-29 14:54:32.7859 INFO Here is the log on Endris 
+2025-11-29 14:54:33.0652 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:54:32
+2025-11-29 14:56:06.7960 INFO Here is the log on Endris 
+2025-11-29 14:56:06.8013 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 14:56:06
+2025-11-29 15:00:40.4063 INFO Here is the log on Endris 
+2025-11-29 15:00:40.4063 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 29/11/2025 15:00:40

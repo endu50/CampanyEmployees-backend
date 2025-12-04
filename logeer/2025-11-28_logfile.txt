@@ -1,0 +1,2 @@
+2025-11-28 13:01:55.8665 INFO Here is the log on Endris 
+2025-11-28 13:01:56.0210 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 28/11/2025 13:01:55
