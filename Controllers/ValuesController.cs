@@ -5,6 +5,8 @@ using CompanyEmployees.DTOObject;
 using CompanyEmployees.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace CompanyEmployees.Controllers
 {
@@ -15,15 +17,18 @@ namespace CompanyEmployees.Controllers
         private readonly ILogger<ValuesController> _logger;
         private readonly IMapper _mapper;
         private readonly IRepositoryManager _repository;
-        public ValuesController(ILogger<ValuesController> logger, IMapper mapper,IRepositoryManager repository)
+        private readonly RepositoryContext _context;
+        public ValuesController(ILogger<ValuesController> logger, IMapper mapper,
+            IRepositoryManager repository, RepositoryContext context)
         {
             _logger = logger;
             _mapper = mapper;
-            _repository = repository;           
+            _repository = repository;
+            _context = context;
         }
 
         [HttpGet("")]
-        public async Task< IActionResult> Get()
+        public Task< IActionResult> Get()
         {
             var result =  _repository.Company.GetAllCompanies(trackChanges:false);
             if(result == null)
@@ -32,12 +37,43 @@ namespace CompanyEmployees.Controllers
             }
             var response = _mapper.Map<IEnumerable<CompanyDto>>(result);
 
-            return Ok(response);
+            return Task.FromResult<IActionResult>(Ok(response));
       
+        }
+        [HttpGet("Department")]
+        public async Task< ActionResult <IEnumerable<Department>>> GetDepartmentsIN()
+        {
+            //var dep = _context.Departments.FirstOrDefault(c => c.DeptId.Equals(dto.DeptId));
+            //if (dep== null)
+            //{
+            //    _logger.LogError("No Dept Id Found");
+            //}
+            var department = await _context.Departments.ToListAsync();
+
+            if (department == null)
+            {
+                _logger.LogError("empty departments");
+            }
+
+            return  Ok(department);
+        }
+
+        [HttpPost("department")]  
+        public ActionResult  CreateDepartment( [FromBody] DepartmentForCreation departmentdto)
+        {
+           var  department = new Department
+           {
+               Name = departmentdto.Name,
+               Description = departmentdto.Description
+           };
+            _context.Departments.Add(department);
+            _context.SaveChanges();
+            // return Ok ("Department Created Successfully!!");
+            return CreatedAtRoute("deptId", new { deptId = department.DeptId }, department);
+
         }
 
         [HttpPost]
-
         public IActionResult CreateEmployee( Guid companyId, [FromBody] EmployeeForCreatingDto employeeDto)
         {
             if(employeeDto == null)

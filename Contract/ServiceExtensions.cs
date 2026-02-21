@@ -1,0 +1,104 @@
+﻿using AspNetCoreRateLimit;
+using CompanyEmployees.Models;
+using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+
+
+namespace CompanyEmployees.Contract
+{
+    public static class ServiceExtensions
+    {
+        public static void ConfigureVersioning(this IServiceCollection services)
+        {
+            services.AddApiVersioning(options =>
+            {
+                options.ReportApiVersions = true;
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+
+
+                // URL versioning: /api/v1/companies
+                // options.ApiVersionReader = new UrlSegmentApiVersionReader();
+            });
+        }
+        public static void ConfigureResponseCaching(this IServiceCollection services) =>
+services.AddResponseCaching();
+        public static void ConfigureHttpCacheHeaders(this IServiceCollection services) =>
+    services.AddHttpCacheHeaders((expirationOpt) =>
+    {
+        expirationOpt.MaxAge = 65;
+        expirationOpt.CacheLocation = CacheLocation.Private;
+    },
+    (validationOpt) =>
+    {
+        validationOpt.MustRevalidate = true;
+    });
+
+        public static void ConfigureRateLimitingOptions(this IServiceCollection services)
+        {
+            var rateLimitRules = new List<RateLimitRule>
+{
+new RateLimitRule
+{
+Endpoint = "*",
+Limit= 10,
+Period = "10m"
+}
+};
+            services.Configure<IpRateLimitOptions>(opt =>
+            {
+                opt.GeneralRules = rateLimitRules;
+            });
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+        }
+    
+    public static void ConfigureIdentity(this IServiceCollection services)
+        {
+            var builder = services.AddIdentity<ApplicationUser,IdentityRole>(o =>
+            {
+                o.Password.RequireDigit = true;
+                o.Password.RequireLowercase = false;
+                o.Password.RequireUppercase = false;
+                o.Password.RequireNonAlphanumeric = false;
+                o.Password.RequiredLength = 10;
+                o.User.RequireUniqueEmail = true;
+            });
+            builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole),
+            builder.Services);
+            builder.AddEntityFrameworkStores<RepositoryContext>()
+            .AddDefaultTokenProviders();
+        }
+        public static void ConfigureJWT(this IServiceCollection services, IConfiguration
+configuration)
+        {
+            var jwtSettings = configuration.GetSection("JwtSettings");
+            var secretKey = Environment.GetEnvironmentVariable("SECRET");
+            services.AddAuthentication(opt => {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtSettings.GetSection("validIssuer").Value,
+                    ValidAudience = jwtSettings.GetSection("validAudience").Value,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+                };
+            });
+        }
+    }
+
+    }

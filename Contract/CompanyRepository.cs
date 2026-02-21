@@ -1,4 +1,5 @@
 ﻿using CompanyEmployees.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.Contract
 {
@@ -11,13 +12,22 @@ namespace CompanyEmployees.Contract
         public void CreateCompany(Company company) => Create(company);
        
 
-        public IEnumerable<Company> GetAllCompanies(bool trackChanges) =>
-        FindAll(trackChanges)
+        public async Task <IEnumerable<Company>> GetAllCompanies(bool trackChanges) =>
+      await FindAll(trackChanges)
         .OrderBy(c => c.Name)
-        .ToList();
+        .ToListAsync();
 
-        public Company GetCompany(Guid companyId, bool trackChanges) => 
-            FindByCondition(c => c.Id.Equals(companyId), trackChanges)
-.SingleOrDefault();
+        public async Task<Company?> GetCompany(Guid companyId, bool trackChanges) =>
+           await FindByCondition(c => c.Id.Equals(companyId), trackChanges)
+.SingleOrDefaultAsync();
+
+        public async Task< IEnumerable<Company>> GetByIds(IEnumerable<Guid> ids, bool trackChanges) => 
+await FindByCondition(x => ids.Contains(x.Id), trackChanges)
+.ToListAsync();
+
+        public void DeleteCampany(Company company)
+        {
+            Delete(company);
+        }
     }
 }

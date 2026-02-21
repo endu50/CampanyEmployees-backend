@@ -11,6 +11,9 @@
         public RepositoryManager(RepositoryContext repositoryContext)
         {
             _repositoryContext = repositoryContext;
+            _companyRepository = new CompanyRepository(_repositoryContext);
+            _employeeRepository = new EmployeeRepository(_repositoryContext);
+            _departmentRepositery = new DepartmentRepositery(_repositoryContext);
         }
 
         public ICompanyRepository Company
@@ -47,6 +50,9 @@
             }
         }
 
-        public void Save() => _repositoryContext.SaveChanges();
+        public void Delete() => _repositoryContext.SaveChanges();
+       
+
+        public Task  Save() =>  _repositoryContext.SaveChangesAsync();
     }
 }

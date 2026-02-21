@@ -1,0 +1,3 @@
+2025-12-10 07:38:55.4422 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-10 13:12:02.9062 INFO Here is the log on Endris 
+2025-12-10 13:12:02.9525 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 10/12/2025 13:12:02

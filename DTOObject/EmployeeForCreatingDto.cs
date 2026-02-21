@@ -1,9 +1,6 @@
 ﻿namespace CompanyEmployees.DTOObject
 {
-    public class EmployeeForCreatingDto
+    public class EmployeeForCreatingDto : EmployeeForManipulationDto
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string Position { get; set; }
     }
 }

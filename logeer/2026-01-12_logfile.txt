@@ -1,0 +1,3 @@
+2026-01-12 06:56:03.0311 INFO Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce3 doesn't exist in the database.
+2026-01-12 08:11:10.1179 ERROR Unhandled exception caught by globalExceptionHandler
+2026-01-12 08:15:32.4062 ERROR Unhandled exception caught by globalExceptionHandler

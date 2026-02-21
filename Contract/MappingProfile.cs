@@ -18,8 +18,14 @@ namespace CompanyEmployees.Contract
 
             CreateMap<CompanyForCreationDto, Company>();
             CreateMap<EmployeeForCreatingDto, Employee>();
-          //  CreateMap <DeparmentForCreatingDto, Department>();
-            
+            CreateMap <DepartmentForCreation, Department>();
+            CreateMap<EmployeeForUpdateDto, Employee>();
+            CreateMap<DepartmrntForUpdateDto, Department>();
+            CreateMap<CampanyForUpdateDto, Company>();
+            CreateMap<EmployeeForUpdateDto, Employee>().ReverseMap();
+            CreateMap<CampanyForUpdateDto, Company>().ReverseMap();
+
+            CreateMap<UserForRegistrationDto, ApplicationUser>();
         }
     }
 }

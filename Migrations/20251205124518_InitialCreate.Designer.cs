@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CompanyEmployees.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20251128075036_inital data")]
-    partial class initaldata
+    [Migration("20251205124518_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,47 @@ namespace CompanyEmployees.Migrations
                         });
                 });
 
+            modelBuilder.Entity("CompanyEmployees.Models.Department", b =>
+                {
+                    b.Property<int>("DeptId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeptId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DeptId");
+
+                    b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            DeptId = 123,
+                            Description = "Best Accounting",
+                            Name = "Accounting"
+                        },
+                        new
+                        {
+                            DeptId = 456,
+                            Description = "Best Finanace",
+                            Name = "finanance"
+                        },
+                        new
+                        {
+                            DeptId = 789,
+                            Description = "Best Marketing",
+                            Name = "Marketing"
+                        });
+                });
+
             modelBuilder.Entity("CompanyEmployees.Models.Employee", b =>
                 {
                     b.Property<Guid>("Id")
@@ -79,6 +120,12 @@ namespace CompanyEmployees.Migrations
 
                     b.Property<Guid>("CompanyId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("DepartmentDeptId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DeptId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -93,6 +140,8 @@ namespace CompanyEmployees.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CompanyId");
+
+                    b.HasIndex("DepartmentDeptId");
 
                     b.ToTable("Employees");
 
@@ -131,12 +180,23 @@ namespace CompanyEmployees.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("CompanyEmployees.Models.Department", "Department")
+                        .WithMany("employees")
+                        .HasForeignKey("DepartmentDeptId");
+
                     b.Navigation("Company");
+
+                    b.Navigation("Department");
                 });
 
             modelBuilder.Entity("CompanyEmployees.Models.Company", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("CompanyEmployees.Models.Department", b =>
+                {
+                    b.Navigation("employees");
                 });
 #pragma warning restore 612, 618
         }

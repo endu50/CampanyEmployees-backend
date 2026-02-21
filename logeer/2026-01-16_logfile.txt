@@ -1,0 +1,27 @@
+2026-01-16 07:52:27.6479 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 08:01:48.4799 ERROR Object sent from client is null. Controller: Authentication,  action: RegisterUser
+2026-01-16 08:58:55.4279 INFO The Action is Excuted Successfully
+2026-01-16 09:16:37.0000 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 10:47:58.7140 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 11:12:42.5913 INFO The Action is Excuted Successfully
+2026-01-16 11:22:59.0067 ERROR Unhandled exception caught by globalExceptionHandler
+2026-01-16 11:29:25.7262 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 11:40:37.7258 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 11:46:34.9153 ERROR Object sent from client is null. Controller: Authentication,  action: RegisterUser
+2026-01-16 11:47:37.5174 ERROR Object sent from client is null. Controller: Authentication,  action: RegisterUser
+2026-01-16 11:48:34.2946 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 11:51:49.7902 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 11:53:12.9478 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 12:31:48.1437 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 12:32:32.9954 ERROR Invalid model state for the object. Controller: Authentication, action: Authenticate 
+2026-01-16 12:35:19.4958 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 12:40:54.1043 INFO The Action is Excuted Successfully
+2026-01-16 13:00:32.2295 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-01-16 13:00:32.7182 INFO The Action is Excuted Successfully
+2026-01-16 13:11:56.5295 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-01-16 13:11:57.1083 INFO The Action is Excuted Successfully
+2026-01-16 13:49:08.5293 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-01-16 13:49:08.9712 INFO The Action is Excuted Successfully
+2026-01-16 13:52:54.4256 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-16 14:03:39.7516 INFO The Action is Excuted Successfully
+2026-01-16 14:04:47.5173 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate

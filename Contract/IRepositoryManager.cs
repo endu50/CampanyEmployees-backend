@@ -7,6 +7,7 @@ namespace CompanyEmployees.Contract
          ICompanyRepository Company { get; }
          IEmployeeRepository Employee { get; }
          IDepartmentRepositery Department { get; }
-        void Save();
+         Task Save();
+        void Delete();
     }
 }

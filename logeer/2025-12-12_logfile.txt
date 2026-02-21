@@ -1,0 +1,100 @@
+2025-12-12 11:43:51.0834 INFO Here is the log on Endris 
+2025-12-12 11:43:51.1678 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 11:43:51
+2025-12-12 11:52:37.9037 INFO Here is the log on Endris 
+2025-12-12 11:52:37.9133 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 11:52:37
+2025-12-12 11:54:14.3689 INFO Here is the log on Endris 
+2025-12-12 11:54:17.3478 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 11:54:17
+2025-12-12 12:08:49.0669 INFO Here is the log on Endris 
+2025-12-12 12:08:49.2159 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:08:49
+2025-12-12 12:08:49.3616 ERROR Something went wrong in the GetCompanies action Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CompanyEmployees.Contract.CompanyRepository.GetAllCompanies(Boolean trackChanges) in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Contract\CompanyRepository.cs:line 15
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Controllers\CompaniesController.cs:line 60
+ClientConnectionId:5f55c6ef-22f4-42fe-88e9-e31156dc7340
+Error Number:-2,State:0,Class:11 
+2025-12-12 12:08:49.3616 ERROR Something went wrong in the GetCompanies action Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   at Microsoft.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at CompanyEmployees.Contract.CompanyRepository.GetAllCompanies(Boolean trackChanges) in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Contract\CompanyRepository.cs:line 15
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Controllers\CompaniesController.cs:line 60
+ClientConnectionId:14b0f061-3c8e-4c85-87dc-6f2bb29fee95
+Error Number:-2,State:0,Class:11 
+2025-12-12 12:08:49.8003 INFO Here is the log on Endris 
+2025-12-12 12:08:49.8003 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:08:49
+2025-12-12 12:08:49.9791 INFO Here is the log on Endris 
+2025-12-12 12:08:49.9791 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:08:49
+2025-12-12 12:16:26.0887 INFO Here is the log on Endris 
+2025-12-12 12:16:26.1183 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:16:26
+2025-12-12 12:23:53.7137 INFO Here is the log on Endris 
+2025-12-12 12:23:53.8987 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:23:53
+2025-12-12 12:26:41.7832 INFO Here is the log on Endris 
+2025-12-12 12:26:41.7832 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:26:41
+2025-12-12 12:30:57.7782 INFO Here is the log on Endris 
+2025-12-12 12:30:58.0709 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:30:58
+2025-12-12 12:31:11.7934 INFO Here is the log on Endris 
+2025-12-12 12:31:11.7934 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:31:11
+2025-12-12 12:49:44.9815 INFO Here is the log on Endris 
+2025-12-12 12:49:45.1969 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 12:49:45
+2025-12-12 12:52:40.2352 ERROR No campany id Found
+2025-12-12 13:01:48.9918 INFO Here is the log on Endris 
+2025-12-12 13:01:48.9918 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:01:48
+2025-12-12 13:04:07.2685 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-12 13:29:20.4342 INFO Here is the log on Endris 
+2025-12-12 13:29:20.4560 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:29:20
+2025-12-12 13:35:57.8599 INFO Here is the log on Endris 
+2025-12-12 13:35:57.8599 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:35:57
+2025-12-12 13:37:17.1624 INFO Here is the log on Endris 
+2025-12-12 13:37:17.1624 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:37:17
+2025-12-12 13:38:12.0660 INFO Here is the log on Endris 
+2025-12-12 13:38:12.0660 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:38:12
+2025-12-12 13:39:52.1289 INFO Here is the log on Endris 
+2025-12-12 13:39:52.1349 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:39:52
+2025-12-12 13:40:38.4728 INFO Here is the log on Endris 
+2025-12-12 13:40:38.4801 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:40:38
+2025-12-12 13:49:02.4900 INFO Here is the log on Endris 
+2025-12-12 13:49:02.4900 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 12/12/2025 13:49:02

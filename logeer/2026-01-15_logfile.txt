@@ -1,0 +1,10 @@
+2026-01-15 08:17:55.3763 INFO The Action is Excuted Successfully
+2026-01-15 08:19:34.1709 ERROR Invalid model state for the object. Controller: Authentication, action: RegisterUser 
+2026-01-15 13:12:16.7319 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-01-15 13:12:17.1057 INFO The Action is Excuted Successfully
+2026-01-15 13:21:16.2696 INFO The Action is Excuted Successfully
+2026-01-15 13:21:39.9276 INFO The Action is Excuted Successfully
+2026-01-15 13:33:17.1545 INFO The Action is Excuted Successfully
+2026-01-15 14:13:51.9745 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-15 14:20:16.0847 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-15 14:26:48.6059 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate

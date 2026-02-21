@@ -1,0 +1,16 @@
+2025-12-05 07:05:41.5759 ERROR Error Finding Departments Or Null
+2025-12-05 07:09:08.0964 ERROR Error Finding Departments Or Null
+2025-12-05 07:16:30.0347 ERROR Error Finding Departments Or Null
+2025-12-05 07:18:25.8908 ERROR Error Finding Departments Or Null
+2025-12-05 07:23:31.7082 ERROR Error Finding Departments Or Null
+2025-12-05 07:24:16.9083 ERROR Error Finding Departments Or Null
+2025-12-05 07:32:46.3783 ERROR Error Finding Departments Or Null
+2025-12-05 07:33:27.8332 ERROR Error Finding Departments Or Null
+2025-12-05 08:12:24.6843 ERROR Error Finding Departments Or Null
+2025-12-05 08:12:46.1143 ERROR Error Finding Departments Or Null
+2025-12-05 08:28:26.2590 ERROR Error Finding Departments Or Null
+2025-12-05 08:28:29.9879 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-05 08:28:59.6358 ERROR Error Finding Departments Or Null
+2025-12-05 08:29:00.5070 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-05 08:57:35.0277 ERROR Error Finding Departments Or Null
+2025-12-05 08:57:37.7119 ERROR Unhandled exception caught by globalExceptionHandler

@@ -1,0 +1,16 @@
+2026-01-27 07:55:06.1741 INFO The Action is Excuted Successfully
+2026-01-27 08:00:10.3376 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-27 08:05:58.8208 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate
+2026-01-27 08:06:23.1443 ERROR Object sent from client is null. Controller: Authentication,  action: RegisterUser
+2026-01-27 08:07:13.9872 INFO The Action is Excuted Successfully
+2026-01-27 08:10:29.0174 ERROR Object sent from client is null. Controller: Authentication,  action: RegisterUser
+2026-01-27 11:36:49.3724 INFO The Action is Excuted Successfully
+2026-01-27 11:36:49.6226 ERROR Unhandled exception caught by globalExceptionHandler
+2026-01-27 11:37:13.4046 INFO The Action is Excuted Successfully
+2026-01-27 11:37:41.2381 INFO The Action is Excuted Successfully
+2026-01-27 11:38:15.0013 INFO The Action is Excuted Successfully
+2026-01-27 11:39:27.1909 INFO The Action is Excuted Successfully
+2026-01-27 11:39:27.1973 ERROR Unhandled exception caught by globalExceptionHandler
+2026-01-27 11:43:06.2437 INFO The Action is Excuted Successfully
+2026-01-27 11:43:27.0590 INFO The Action is Excuted Successfully
+2026-01-27 11:44:07.7286 INFO The Action is Excuted Successfully

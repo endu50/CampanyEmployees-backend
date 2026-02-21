@@ -1,0 +1,19 @@
+2025-12-16 12:26:38.5698 ERROR Validation Error from Client Dto
+2025-12-16 12:27:19.7084 ERROR Validation Error from Client Dto
+2025-12-16 12:37:34.0468 ERROR Validation Error from Client Dto
+2025-12-16 12:38:50.3688 ERROR Validation Error from Client Dto
+2025-12-16 12:39:08.6003 ERROR Validation Error from Client Dto
+2025-12-16 12:51:36.1400 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2025-12-16 12:52:10.1453 INFO Company with id: 27c0f986-62d9-40d0-f63d-08de37c00ef9 doesn't exist in the  database.
+2025-12-16 12:55:37.1608 ERROR Validation Error from Client Dto
+2025-12-16 13:02:23.0571 INFO Company with id: 27c0f986-62d9-40d0-f63d-08de37c00ef9 doesn't exist in the database.
+2025-12-16 13:05:34.1009 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2025-12-16 13:06:03.1179 INFO Company with id: 27c0f986-62d9-40d0-f63d-08de37c00ef9 doesn't exist in the  database.
+2025-12-16 13:07:45.3297 INFO Company with id: 27c0f986-62d9-40d0-f63d-08de37c00ef9 doesn't exist in the  database.
+2025-12-16 13:09:32.8989 INFO Company with id: 27c0f986-62d9-40d0-f63d-08de37c00ef9 doesn't exist in the  database.
+2025-12-16 13:16:53.4128 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-16 13:18:39.6472 ERROR Invalid Model state from Client Dto
+2025-12-16 13:19:24.9893 ERROR Invalid Model state from Client Dto
+2025-12-16 13:43:43.7141 ERROR Invalid model state for the patch document
+2025-12-16 13:54:31.2243 ERROR Invalid model state for the patch document
+2025-12-16 13:54:57.7984 ERROR Invalid model state for the patch document

@@ -1,0 +1,1 @@
+2026-01-17 07:28:35.7080 ERROR Object sent from client is null. Controller: Authentication,  action: Authenticate

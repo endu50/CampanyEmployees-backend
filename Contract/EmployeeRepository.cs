@@ -1,4 +1,5 @@
 ﻿using CompanyEmployees.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.Contract
 {
@@ -9,18 +10,28 @@ namespace CompanyEmployees.Contract
 
         }
 
-        public IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges) =>
-FindByCondition(e => e.CompanyId.Equals(companyId), trackChanges)
-.OrderBy(e => e.Name);
+        public async Task<IEnumerable<Employee>> GetEmployees(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges) =>
+ await FindByCondition(e => e.CompanyId.Equals(companyId),trackChanges)
+            .FilterEmployes(employeeParameters.MinAge,employeeParameters.MaxAge)
+            .Search(employeeParameters.SearchTerm)
+.OrderBy(e => e.Name).Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
+.Take(employeeParameters.PageSize).ToListAsync();
 
-        public Employee GetEmployee(Guid companyId, Guid id, bool trackChanges) =>
-    FindByCondition(e => e.CompanyId.Equals(companyId) && e.Id.Equals(id),trackChanges)
-    .SingleOrDefault();
+        public async Task <Employee?>  GetEmployee(Guid companyId, Guid id, bool trackChanges) =>
+   await FindByCondition(e => e.CompanyId.Equals(companyId) && e.Id.Equals(id),trackChanges)
+    .SingleOrDefaultAsync();
 
         public void CreateEmploye(Guid companyId, Employee employee)
         {
             employee.CompanyId = companyId;
             Create(employee);
         }
+
+        public void DeleteEmployee(Employee employee)
+        {
+            Delete(employee);
+        }
+
+      
     }
 }

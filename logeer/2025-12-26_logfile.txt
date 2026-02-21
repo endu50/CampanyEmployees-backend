@@ -1,0 +1,13 @@
+2025-12-26 08:15:53.6083 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2025-12-26 09:02:57.8974 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 09:08:36.5145 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 10:40:32.9935 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 11:04:01.4056 INFO Company with id: 3f79b0fc-b8f4-4343-5d80-08de34930a91 doesn't exist in the database.
+2025-12-26 11:05:03.3071 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 11:05:52.6181 INFO Company with id: 3f79b0fc-b8f4-4343-5d80-08de34930a91 doesn't exist in the database.
+2025-12-26 11:08:14.5024 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 11:11:16.5551 INFO Company with id: aefe9c48-0fa5-430c-702c-08de3b092c94 doesn't exist in the database.
+2025-12-26 11:14:57.5751 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-26 11:17:07.5627 INFO Company with id: aefe9c48-0fa5-430c-702c-08de3b092c94 doesn't exist in the database.
+2025-12-26 11:17:07.5627 INFO The Action is Excuted Successfully
+2025-12-26 11:18:27.0352 INFO The Action is Excuted Successfully

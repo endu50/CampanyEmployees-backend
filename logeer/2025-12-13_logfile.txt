@@ -1,0 +1,28 @@
+2025-12-13 12:03:44.6967 INFO Here is the log on Endris 
+2025-12-13 12:03:44.8138 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:03:44
+2025-12-13 12:07:30.4907 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-13 12:12:29.9893 INFO Here is the log on Endris 
+2025-12-13 12:12:30.1936 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:12:30
+2025-12-13 12:13:27.4818 INFO Here is the log on Endris 
+2025-12-13 12:13:27.4818 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:13:27
+2025-12-13 12:31:27.9147 INFO Here is the log on Endris 
+2025-12-13 12:31:27.9147 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:31:27
+2025-12-13 12:33:02.1710 INFO Here is the log on Endris 
+2025-12-13 12:33:02.1918 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:33:02
+2025-12-13 12:33:41.7952 INFO Here is the log on Endris 
+2025-12-13 12:33:41.7952 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:33:41
+2025-12-13 12:39:17.4607 INFO Here is the log on Endris 
+2025-12-13 12:39:17.4607 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:39:17
+2025-12-13 12:43:08.9303 INFO Here is the log on Endris 
+2025-12-13 12:43:08.9303 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:43:08
+2025-12-13 12:51:31.5745 INFO Here is the log on Endris 
+2025-12-13 12:51:31.5745 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:51:31
+2025-12-13 12:57:29.4090 INFO Here is the log on Endris 
+2025-12-13 12:57:29.4090 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 12:57:29
+2025-12-13 13:05:53.5899 INFO Here is the log on Endris 
+2025-12-13 13:05:53.5945 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 13:05:53
+2025-12-13 13:14:03.1889 INFO Here is the log on Endris 
+2025-12-13 13:14:03.1889 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 13:14:03
+2025-12-13 13:14:03.3029 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-13 13:14:12.0333 INFO Here is the log on Endris 
+2025-12-13 13:14:12.0333 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 13/12/2025 13:14:12

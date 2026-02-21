@@ -1,0 +1,14 @@
+2025-12-08 06:25:30.2136 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 06:25:43.4470 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:02:23.1257 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:04:43.0483 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:14:29.0335 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:14:44.0428 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:19:48.1908 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:22:54.8478 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 07:24:33.6527 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 08:20:21.5534 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 08:34:16.1874 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 08:50:32.3877 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 08:57:17.6828 ERROR Unhandled exception caught by globalExceptionHandler
+2025-12-08 09:04:42.4873 ERROR Unhandled exception caught by globalExceptionHandler
