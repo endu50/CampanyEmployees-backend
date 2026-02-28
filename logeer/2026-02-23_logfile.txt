@@ -1,0 +1,18 @@
+2026-02-23 08:27:06.8666 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-02-23 08:27:06.9127 INFO The Action is Excuted Successfully
+2026-02-23 08:35:40.0750 INFO The Action is Excuted Successfully
+2026-02-23 08:36:18.6323 INFO The Action is Excuted Successfully
+2026-02-23 08:37:57.5120 INFO The Action is Excuted Successfully
+2026-02-23 08:40:40.7365 INFO The Action is Excuted Successfully
+2026-02-23 08:41:41.3978 INFO The Action is Excuted Successfully
+2026-02-23 09:03:20.5974 INFO The Action is Excuted Successfully
+2026-02-23 09:04:16.1116 INFO The Action is Excuted Successfully
+2026-02-23 09:29:29.5837 INFO The Action is Excuted Successfully
+2026-02-23 09:31:04.5112 INFO The Action is Excuted Successfully
+2026-02-23 11:49:29.8945 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-23 11:49:29.9392 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-23 11:49:30.9594 INFO The Action is Excuted Successfully
+2026-02-23 12:03:35.8242 INFO The Action is Excuted Successfully
+2026-02-23 12:06:19.6993 INFO The Action is Excuted Successfully
+2026-02-23 12:08:47.4920 INFO The Action is Excuted Successfully
+2026-02-23 12:11:05.2938 INFO The Action is Excuted Successfully

@@ -1,8 +1,10 @@
-﻿using AutoMapper;
+﻿using System.Data;
+using AutoMapper;
 using CompanyEmployees.Contract;
 using CompanyEmployees.DTOObject;
 using CompanyEmployees.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using NLog.Targets.Wrappers;
 
@@ -24,7 +26,7 @@ namespace CompanyEmployees.Controllers
             _mapper = mapper;
             _context = context;
         }
-        [HttpGet]
+        [HttpGet, Authorize(Roles = "Manager")]
         
         public IActionResult getDepartments()
         {

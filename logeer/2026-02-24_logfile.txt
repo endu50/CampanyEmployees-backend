@@ -1,0 +1,73 @@
+2026-02-24 06:39:20.6502 INFO The Action is Excuted Successfully
+2026-02-24 07:01:54.3012 INFO The Action is Excuted Successfully
+2026-02-24 07:01:59.7572 INFO The Action is Excuted Successfully
+2026-02-24 07:29:22.3570 INFO The Action is Excuted Successfully
+2026-02-24 07:30:16.7051 INFO Here is the log on Endris 
+2026-02-24 07:30:16.7051 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 24/02/2026 07:30:16
+2026-02-24 07:32:41.7174 INFO The Action is Excuted Successfully
+2026-02-24 07:43:12.0625 INFO The Action is Excuted Successfully
+2026-02-24 07:47:31.8539 INFO The Action is Excuted Successfully
+2026-02-24 07:51:56.3240 INFO The Action is Excuted Successfully
+2026-02-24 07:53:30.4128 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-24 08:21:44.2670 INFO The Action is Excuted Successfully
+2026-02-24 08:27:12.9347 INFO The Action is Excuted Successfully
+2026-02-24 08:50:59.0540 INFO The Action is Excuted Successfully
+2026-02-24 08:54:47.2237 INFO The Action is Excuted Successfully
+2026-02-24 11:23:00.2063 INFO The Action is Excuted Successfully
+2026-02-24 11:25:30.5657 INFO The Action is Excuted Successfully
+2026-02-24 11:27:05.5930 INFO The Action is Excuted Successfully
+2026-02-24 11:32:43.1726 INFO The Action is Excuted Successfully
+2026-02-24 11:32:43.7547 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-24 11:32:52.7356 INFO The Action is Excuted Successfully
+2026-02-24 11:32:53.4274 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-24 11:33:15.8830 INFO The Action is Excuted Successfully
+2026-02-24 11:35:50.6377 INFO Company with id: 6a2ad92f-b1b5-4c1f-e612-08de3b07bc04 doesn't exist in the database.
+2026-02-24 11:44:22.7137 INFO The Action is Excuted Successfully
+2026-02-24 11:45:47.7920 INFO The Action is Excuted Successfully
+2026-02-24 11:48:29.5655 INFO The Action is Excuted Successfully
+2026-02-24 11:51:53.7457 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-24 11:53:30.3395 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-24 11:53:54.6971 INFO The Action is Excuted Successfully
+2026-02-24 11:55:01.6534 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-24 11:55:17.2366 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-24 11:58:59.1023 INFO The Action is Excuted Successfully
+2026-02-24 11:59:43.1250 INFO The Action is Excuted Successfully
+2026-02-24 12:07:29.7028 INFO The Action is Excuted Successfully
+2026-02-24 12:25:22.0224 INFO The Action is Excuted Successfully
+2026-02-24 12:26:55.6006 ERROR Something went wrong in the GetCompanies action Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CompanyEmployees.Contract.CompanyRepository.GetAllCompanies(Boolean trackChanges) in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Contract\CompanyRepository.cs:line 16
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Controllers\CompaniesController.cs:line 73
+ClientConnectionId:a4d69f59-accd-4b10-bf10-126dc556f832
+Error Number:-2,State:0,Class:11 
+2026-02-24 12:30:54.8294 ERROR Something went wrong in the GetCompanies action System.InvalidOperationException: Invalid operation. The connection is closed.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CompanyEmployees.Contract.CompanyRepository.GetAllCompanies(Boolean trackChanges) in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Contract\CompanyRepository.cs:line 16
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in C:\Users\endu\Documents\Visual Studio 2022\Project\CompanyEmployees\Controllers\CompaniesController.cs:line 73 
+2026-02-24 13:08:13.3037 INFO The Action is Excuted Successfully
+2026-02-24 13:08:40.1061 INFO The Action is Excuted Successfully

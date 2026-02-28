@@ -1,0 +1,24 @@
+2026-02-27 08:19:17.8295 INFO The Action is Excuted Successfully
+2026-02-27 08:20:12.9654 ERROR Validation Error from Client Dto
+2026-02-27 11:10:37.9602 INFO Company with id: 4e377952-8a6d-4d78-0bff-08de46ab9579 doesn't exist in the database.
+2026-02-27 11:10:48.4945 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-27 11:11:08.4270 INFO Company with id: 4e377952-8a6d-4d78-0bff-08de46ab9579 doesn't exist in the database.
+2026-02-27 11:18:01.1628 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2026-02-27 11:19:41.7698 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2026-02-27 11:34:44.6679 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-27 11:36:42.8360 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-27 11:47:30.4640 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2026-02-27 12:06:10.2912 ERROR No Campany id Found from Client
+2026-02-27 12:12:54.9682 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-27 12:26:07.5116 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:26:58.0814 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:27:47.9958 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:27:48.4896 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:30:25.2174 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:31:46.0115 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:32:38.7104 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:34:38.3281 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:34:44.3884 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:47:28.5560 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-27 12:49:11.8601 INFO Here is the log on Endris 
+2026-02-27 12:49:11.8601 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 27/02/2026 12:49:11

@@ -1,0 +1,22 @@
+2026-02-25 07:59:45.9189 INFO The Action is Excuted Successfully
+2026-02-25 08:00:17.2611 INFO The Action is Excuted Successfully
+2026-02-25 08:01:08.8534 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-25 08:01:16.6404 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-25 08:01:47.2343 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-25 08:02:34.3124 INFO The Action is Excuted Successfully
+2026-02-25 08:03:13.9389 WARN Authenticate: Authentication failed. Wrong  user name or password.
+2026-02-25 08:03:13.9389 INFO The Action is Excuted Successfully
+2026-02-25 08:03:31.7978 INFO The Action is Excuted Successfully
+2026-02-25 08:05:06.7544 INFO The Action is Excuted Successfully
+2026-02-25 08:31:59.9481 INFO The Action is Excuted Successfully
+2026-02-25 08:33:09.6033 INFO The Action is Excuted Successfully
+2026-02-25 08:33:33.7422 INFO The Action is Excuted Successfully
+2026-02-25 08:40:59.5957 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-25 08:41:19.8510 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-25 08:43:01.6667 INFO The Action is Excuted Successfully
+2026-02-25 08:44:54.5095 INFO The Action is Excuted Successfully
+2026-02-25 08:45:16.8683 INFO The Action is Excuted Successfully
+2026-02-25 08:45:27.7538 INFO The Action is Excuted Successfully
+2026-02-25 08:45:41.7593 ERROR Invalid model state for the object. Controller: Companies, action: UpdateCompany 
+2026-02-25 09:23:52.3684 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-25 12:32:18.2342 ERROR Unhandled exception caught by globalExceptionHandler

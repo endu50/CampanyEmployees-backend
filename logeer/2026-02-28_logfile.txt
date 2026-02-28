@@ -1,0 +1,16 @@
+2026-02-28 08:21:48.1011 INFO The Action is Excuted Successfully
+2026-02-28 08:39:38.7633 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 08:41:27.1169 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 08:42:57.7513 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-28 08:48:31.8474 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-28 08:48:39.1108 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-28 09:02:51.6923 ERROR No Id Found To Delete
+2026-02-28 09:19:32.2953 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 09:28:23.6841 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 09:29:01.9946 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-28 09:29:38.3438 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 09:36:52.8406 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 09:43:51.8395 INFO Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the  database.
+2026-02-28 09:50:07.6876 ERROR Unhandled exception caught by globalExceptionHandler
+2026-02-28 12:22:44.3969 INFO The Action is Excuted Successfully
+2026-02-28 12:27:26.6811 INFO The Action is Excuted Successfully

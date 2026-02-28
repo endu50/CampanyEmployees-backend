@@ -1,0 +1,9 @@
+2026-02-21 08:31:53.8177 INFO Here is the log on Endris 
+2026-02-21 08:31:53.8917 INFO TEST_LOGGERMANAGER: Weather endpoint hit at 21/02/2026 08:31:53
+2026-02-21 08:32:18.1255 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:32:23.2973 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:33:49.8995 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:33:50.1269 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:33:50.1713 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:33:50.8806 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany 
+2026-02-21 08:34:19.9531 INFO The Action is Excuted Successfully

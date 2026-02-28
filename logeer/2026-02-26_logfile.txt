@@ -1,0 +1,1 @@
+2026-02-26 08:34:40.5781 ERROR Unhandled exception caught by globalExceptionHandler

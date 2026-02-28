@@ -47,8 +47,8 @@ services.AddResponseCaching();
 new RateLimitRule
 {
 Endpoint = "*",
-Limit= 10,
-Period = "10m"
+Limit= 30,
+Period = "30m"
 }
 };
             services.Configure<IpRateLimitOptions>(opt =>

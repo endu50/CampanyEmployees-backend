@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Design;
+using System.Data;
 using System.Diagnostics.Metrics;
 using System.Reflection.Metadata.Ecma335;
 using AutoMapper;
@@ -8,6 +9,7 @@ using CompanyEmployees.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.Controllers
@@ -29,7 +31,7 @@ namespace CompanyEmployees.Controllers
             _mapper = mapper;
             _context = context;
         }
-        [HttpGet]
+        [HttpGet, Authorize(Roles = "Manager")]
         public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
         {
 
@@ -142,8 +144,8 @@ namespace CompanyEmployees.Controllers
            await _repository.Save();
             return Ok("The Employee Id Deleted Successfully");
         }
-        [HttpPut("{id}")]
-        public async Task <ActionResult> UpdateEmploye(Guid campanyId,Guid id, [FromBody] EmployeeForUpdateDto dto)
+        [HttpPut("{id:guid}")]
+        public async Task <ActionResult> UpdateEmploye([FromRoute] Guid companyId, [FromRoute] Guid id, [FromBody] EmployeeForUpdateDto dto)
         {
             if (dto == null)
             {
@@ -155,14 +157,14 @@ namespace CompanyEmployees.Controllers
                 _logger.LogError("Invalid Model state from Client Dto");
                 return UnprocessableEntity(ModelState);
             }
-            var company =await _repository.Company.GetCompany(campanyId, trackChanges: false);
+            var company =await _repository.Company.GetCompany(companyId, trackChanges: false);
             if (company == null)
             {
-                _logger.LogInfo($"Company with id: {campanyId} doesn't exist in the  database.");
+                _logger.LogInfo($"Company with id: {companyId} doesn't exist in the  database.");
                 return NotFound();
             }
-            var empdb = _repository.Employee.GetEmployee(campanyId, id, trackChanges: true);
-            if (dto == null)
+            var empdb =await _repository.Employee.GetEmployee(companyId, id, trackChanges: true);
+            if (empdb == null)
             {
                 _logger.LogError("No User ID Found For Update");
                 return NotFound("No User ID  Found For Update");
